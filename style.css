@@ -1,0 +1,544 @@
+:root {
+  --common: #f6baf6;
+  --box: #1f232c;
+  --footColor: #9c9999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.logoPort {
+  width: 30px;
+  margin: 6px;
+}
+
+nav {
+  /* border: 1px solid white; */
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /*  padding: 0px 20px; */
+  padding: 0px 5px 0px 20px;
+  align-items: center;
+  height: 50px;
+  background-color: #1a237e;
+  /* background-color: rgb(18, 18, 62); */
+  border: none;
+  border-radius: 9px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 25px;
+  /* display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  */
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  /* color: rgb(153, 153, 226); */
+  color: rgb(170, 107, 228);
+  font-size: 1.01rem;
+}
+
+.leftNav {
+  font-weight: 800;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+}
+
+.Porfoliohead {
+  color: rgb(170, 107, 228);
+}
+
+.rightNav {
+  font-weight: 800;
+  background-color: #1c1c1c;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+/* above header navbar css */
+
+.container1 {
+  display: flex;
+  width: 99vw;
+  height: 99vh;
+  padding: 2px;
+}
+
+.left {
+  height: 99vh;
+  width: 25vw;
+  margin: 5px;
+  /* padding: 10px; */
+}
+
+.home {
+  justify-content: space-around;
+  padding: 10px;
+  height: 30%;
+  width: 25vw;
+  background-color: #242424;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+/* 
+.home > * {
+  border: 1px solid white;
+  margin: 10px;
+  width: 50%;
+} */
+
+/* .home .homeImage {
+
+} */
+
+.home .homeImage {
+  width: 50%;
+  box-shadow: -4px 0px 5px 0px;
+  border-radius: 100%;
+  border: 3px solid gray;
+}
+
+.home .homeImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.home .homeContent {
+  text-shadow: 1px 1px 10px gray;
+  font-weight: 700;
+  gap: 6px;
+  display: flex;
+  height: 80%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.library {
+  font-weight: 700;
+  height: 70%;
+  background-color: #242424;
+  padding: 12px 10px;
+}
+
+.library .libraryHadding {
+  color: var(--common);
+}
+
+.library > div {
+  box-shadow: 0px 0px 6px white;
+  margin: 15px 10px;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.library > * h4 {
+  color: var(--common);
+}
+
+.library .dowlCv {
+  box-shadow: none;
+  text-align: center;
+  padding: 0px;
+  border: none;
+}
+
+.library .dowlCv button {
+  padding: 10px 32px;
+  border-radius: 12px;
+  background: yellow;
+  color: black;
+  font-weight: 800;
+}
+.rigth {
+  width: 75vw;
+  /* height: 100%; */
+  height: 100vh;
+  background-color: #242424;
+  /* padding: 10px; */
+}
+
+.rigth header {
+  margin: 10px;
+}
+
+.proFile {
+  width: 95%;
+  height: 49%;
+  margin: auto;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+.leftProfile {
+  position: relative;
+  text-shadow: 2px 2px 1px #f1ebec;
+  white-space: pre-line;
+  text-align: center;
+  font-size: 33px;
+  width: 65%;
+  margin: auto;
+}
+
+.leftProfile div {
+  font-size: 30px;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+#element {
+  color: rgb(170, 107, 228);
+  font-size: 27px;
+}
+
+.socilMedia {
+  display: flex;
+  justify-content: space-between;
+}
+.mediaIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.mediaIcons {
+  font-size: 16px;
+}
+
+.resume-button {
+  /* position: absolute; */
+  /* bottom: 0px; */
+  /* right: 10px; */
+  color: black;
+  font-weight: 800;
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* background: #121200; */
+}
+
+.rightProfile {
+  padding: 10px;
+  width: 35%;
+}
+
+.profileImage {
+  box-shadow: 0px 0px 3px 3px;
+  height: 60%;
+  background-image: url("../images/me.jpg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  width: 100%;
+  height: -webkit-fill-available;
+  margin: auto;
+  border-radius: 40px;
+}
+.profileContent {
+  border-radius: 12px;
+  /* text-shadow: 2px 1px 1px; */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.profileContent .sistec1 {
+  font-size: 30px;
+  color: var(--common);
+}
+
+.profileContent .sistec2 {
+  font-size: 20px;
+}
+.spacilities {
+  height: 30%;
+  width: 100%;
+}
+
+.spacilitiesContent {
+  /* padding: 10px; */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+
+.spacilitiesContent .spacilitiesSpan1 {
+  color: var(--common);
+  font-size: 25px;
+  font-weight: 700;
+}
+.spacilitiesContent .spacilitiesSpan2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.spacilitiesContainer {
+  width: 95%;
+  height: 205px;
+  margin: auto;
+}
+
+.spacilitiesField {
+  background-color: var(--box);
+  box-shadow: 0px 0px 6px white;
+}
+.commonBox {
+  /* border: 1px solid red; */
+  border-radius: 12px;
+  width: 50%;
+  margin: 10px;
+}
+
+.projectImage {
+  display: flex;
+}
+.projectImage img {
+  margin: auto;
+}
+
+.projectContent {
+  padding: 7px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  gap: 5px;
+}
+
+.projectContent button {
+  color: black;
+  font-weight: 600;
+}
+
+/* above body css */
+
+/* css copy of footer and future achievment */
+
+.container2 {
+  background-color: #242424;
+
+  margin: 5px 7px;
+
+  /* margin: 25px 15px 10px 15px; */
+  padding: 10px;
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 78vh;
+  padding: 25px;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+  color: var(--common);
+}
+
+.text-gray {
+  color: gra;
+}
+
+.secondSection .box {
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  margin: 56px 0px;
+  display: flex;
+}
+
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0px 100px;
+}
+
+.image-top {
+  width: 30px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+
+.vertical-tittle {
+  position: relative;
+  top: 75px;
+  width: 150px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 90px;
+  color: gray;
+  width: 150px;
+  font-size: 10px;
+}
+
+
+/* footer css */
+
+
+footer {
+  /* background-color: #0e0e1a; */
+  background-color: #06062f;
+  height: 170px;
+}
+
+.footer .footer-first {
+  color: var(--common);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 30px 140px;
+  justify-content: flex-start;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  /* width: 223px */
+  width: 40%;
+}
+
+.footer .footerGrid {
+  color: var(--footColor);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+footer .footer-text-rights {
+  color: var(--footColor);
+  background-color: #1a237e;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Contect pages css */
+
+.container3 {
+  padding: 20px;
+  /* margin: 25px 15px 5px 15px; */
+  margin: 18px 10px 5px 6px;
+  background-color: #242424;
+  /* height: 100vh; */
+}
+
+.container3 h1 {
+  color: var(--common);
+}
+
+.container3 hr {
+  width: 95%;
+}
+
+.contectPage {
+  display: flex;
+}
+
+.contectLeft {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.contectLeft img {
+  width: 100%;
+}
+
+.contectRight {
+  width: 55%;
+  padding: 20px;
+}
+
+.contectContent {
+  width: 80%;
+  text-align: center;
+  /* margin: auto; */
+}
+
+.contectContent h2 {
+  color: var(--common);
+}
+
+.contectInput {
+  padding: 5px;
+}
+.contectInput label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contectInput input,
+.contectInput textarea {
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  background: #181414;
+  border: 1px solid gray;
+  color: white;
+}
+
+.contectInput button {
+  width: 30%;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px 20px;
+  /* background: #181414; */
+  border: 1px solid gray;
+  /* color: white; */
+  color: black;
+}

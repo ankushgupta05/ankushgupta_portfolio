@@ -1,0 +1,136 @@
+:root {
+  --common: #f6baf6;
+  --box: #1f232c;
+  --footColor: #9c9999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* body {
+  background-color: black;
+  color: white;
+} */
+
+/* navbar css */
+
+.logoPort {
+  width: 30px;
+  margin: 6px;
+}
+
+nav {
+  /* border: 1px solid white; */
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /*  padding: 0px 20px; */
+  padding: 0px 5px 0px 20px;
+  align-items: center;
+  height: 50px;
+  background-color: #1a237e;
+  /* background-color: rgb(18, 18, 62); */
+  border: none;
+  border-radius: 9px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 25px;
+  /* display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    */
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  /* color: rgb(153, 153, 226); */
+  color: rgb(170, 107, 228);
+  font-size: 1.01rem;
+}
+
+.leftNav {
+  font-weight: 800;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+}
+
+.Porfoliohead {
+  color: rgb(170, 107, 228);
+}
+
+.rightNav {
+  font-weight: 800;
+  background-color: #1c1c1c;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+/* footer css */
+
+footer {
+  /* background-color: #0e0e1a; */
+  background-color: #06062f;
+  height: 170px;
+}
+
+.footer .footer-first {
+  color: var(--common);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 30px 140px;
+  justify-content: flex-start;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  /* width: 223px */
+  width: 40%;
+}
+
+.footer .footerGrid {
+  color: var(--footColor);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+footer .footer-text-rights {
+  color: var(--footColor);
+  background-color: #1a237e;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}

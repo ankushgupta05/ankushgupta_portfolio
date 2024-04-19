@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="utility.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="leftNav"> My-Awesome<span class="Porfoliohead">Porfolio</span></div>
+            <div class="rightNav">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container3 rounded">
+        <h1>Contect Me</h1>
+        <hr class="hr">
+        <div class="contectPage">
+
+            <div class="contectLeft">
+                <img src="images/contect5.gif" alt="">
+            </div>
+            <div class="contectRight">
+                <div class="contectContent">
+                    <div>Looks like you need some help!!!</div>
+                    <h2>Reach Out!</h2>
+                    <div>I usually within hour, but developer do sleep four to five hours a night, so it might take a
+                        bit
+                        longer. Thank you and I am Looking to hearing from you.</div>
+                </div>
+
+                <div class="contectForm">
+                    <form action="/" method="post">
+                        <div class="contectInput flex flex-col">
+                            <label for="username">Name </label>
+                            <input id="name1" type="text" id="username" name="username" placeholder="John Doe">
+                        </div>
+                        <div class="contectInput flex flex-col">
+                            <label for="useremail">Email Address </label>
+                            <input id="email1" type="email" id="useremail" name="email" placeholder="example@mail.com">
+                        </div>
+                        <div class="contectInput flex flex-col">
+                            <label for="message">Message </label>
+                            <textarea id="message1" name="usermessage" id="usermessage" cols="25" rows="5"
+                                placeholder="Write Your Message!!!"></textarea>
+                        </div>
+                        <div class="contectInput flex flex-col">
+                            <button type="button" src="/index.html" onclick="verify()" class="btn btn-info"><a href="/index.html" class="white"> Submit</a></button>
+                            <!-- <button type="submit"   class="btn btn-info">Submit</button> -->
+                            <!-- <button>Submit</button> -->
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Ankush's Developer</h3>
+                <h3> Portfolio</h3>
+            </div>
+
+            <div class="footerGrid">
+                <div class="footer-second">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-text-rights">
+            ankushsportfolio.com &copy; || All rights reserved
+        </div>
+    </footer>
+
+    <script>
+
+        /* 
+        // get Request 
+        
+        const getData =async () =>{
+            let req = await fetch("http://localhost:3000/")
+            let dataName = await req.json();
+            console.log(dataName);
+        }
+        
+        */
+
+        let db;
+
+        const getData = async () => {
+
+
+            let res = await fetch("http://localhost:3000/", {
+                method: "POST", headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(db)
+            })
+
+        }
+
+        async function verify() {
+            let name = document.getElementById('name1').value
+            let email = document.getElementById('email1').value
+            let text = document.getElementById('message1').value
+            // console.log(name, email, text)
+            db = { 'name': name, 'email': email, 'text': text }
+            console.log(db)
+
+            await getData();
+        }
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

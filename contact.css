@@ -1,0 +1,216 @@
+body {
+  background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --common: #f6baf6;
+  --box: #1f232c;
+  --footColor: #9c9999;
+}
+
+.logoPort {
+  width: 30px;
+  margin: 6px;
+}
+
+nav {
+  /* border: 1px solid white; */
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /*  padding: 0px 20px; */
+  padding: 0px 5px 0px 20px;
+  align-items: center;
+  height: 50px;
+  background-color: #1a237e;
+  /* background-color: rgb(18, 18, 62); */
+  border: none;
+  border-radius: 9px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 25px;
+  /* display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    */
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  /* color: rgb(153, 153, 226); */
+  color: rgb(170, 107, 228);
+  font-size: 1.01rem;
+}
+
+.leftNav {
+  font-weight: 800;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+}
+
+.Porfoliohead {
+  color: rgb(170, 107, 228);
+}
+
+.rightNav {
+  font-weight: 800;
+  background-color: #1c1c1c;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+/* contact css */
+
+.container3 {
+  margin: 5px;
+  padding: 10px 60px;
+  color: white;
+  background-color: #242424;
+  /* height: 90vh; */
+  /* height: 100vh; */
+}
+
+.container3 h1 {
+  color: var(--common);
+}
+
+.container3 .hr {
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid gray;
+
+}
+
+.contectPage {
+  display: flex;
+}
+
+.contectLeft {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.contectLeft img {
+  width: 100%;
+}
+
+.contectRight {
+  width: 55%;
+  padding: 20px;
+}
+
+.contectContent {
+  width: 80%;
+  text-align: center;
+  /* margin: auto; */
+}
+
+.contectContent h2 {
+  color: var(--common);
+}
+
+.contectInput {
+  padding: 5px;
+}
+.contectInput label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contectInput input,
+.contectInput textarea {
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  background: #181414;
+  border: 1px solid gray;
+  color: white;
+}
+
+.contectInput button {
+  width: 30%;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px 20px;
+  /* background: #181414; */
+  border: 1px solid gray;
+  /* color: white; */
+  color: black;
+}
+
+/* footer css */
+
+footer {
+  /* background-color: #0e0e1a; */
+  background-color: #06062f;
+  height: 170px;
+}
+
+.footer .footer-first {
+  color: var(--common);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 30px 140px;
+  justify-content: flex-start;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  /* width: 223px */
+  width: 40%;
+}
+
+.footer .footerGrid {
+  color: var(--footColor);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+footer .footer-text-rights {
+  color: var(--footColor);
+  background-color: #1a237e;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
